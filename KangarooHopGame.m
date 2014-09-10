@@ -10,7 +10,7 @@
 
 @implementation KangarooHopGame
 
--(void)setAdjacencyListSets
+-(void)setAdjacencyLists
 {
     // 5x5 grid. array is 1 offset
     //array[i] is the adjacency list for KBoardCell located at board[i]
@@ -43,7 +43,7 @@
                        [NSSet setWithArray:@[@19]]
                        ];
                        
-    self.adjacencyListSets = array;
+    self.allAdjacencyLists = array;
 }
 
 -(void)setup
@@ -51,16 +51,16 @@
     // do the most simple setup possible, two game pieces, one at 7 and one at 13
     //make a KBoard
     self.board = [KBoard initWithCapacity:25];
-    [self adjacencyListSets];
+    [self setAdjacencyLists];
     
     // place pieces at BoardCell 7 and 13
-    KBoardCell *cell7 = [KBoardCell initWithPiece:[KPiece newKangarooHopPiece] andAdjacencyList:self.adjacencyListSets[7]];
-    KBoardCell *cell13 = [KBoardCell initWithPiece:[KPiece newKangarooHopPiece] andAdjacencyList:self.adjacencyListSets[13]];
+    KBoardCell *cell7 = [KBoardCell initWithPiece:[KPiece newKangarooHopPiece] andAdjacencyList:[self.allAdjacencyLists objectAtIndex:7]];
+    KBoardCell *cell13 = [KBoardCell initWithPiece:[KPiece newKangarooHopPiece] andAdjacencyList:[self.allAdjacencyLists objectAtIndex:13]];
     
     [self.board replaceObjectAtIndex:7 withObject:cell7];
     [self.board replaceObjectAtIndex:13 withObject:cell13];
     
-    NSLog(@"Adjacently list sets are %@",self.adjacencyListSets);
+    NSLog(@"Adjacently list sets are %@",self.allAdjacencyLists);
     
 }
 

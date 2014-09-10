@@ -29,11 +29,11 @@
 -(instancetype)initWithCapacity:(NSUInteger)numItems
 {   //creates KBoard for 1 offset use, i.e. Kboard[0] will never be assigned for any instance.
     
-    self = [super initWithCapacity:(numItems+1)];
+    self = [[KBoard superclass] arrayWithCapacity:(numItems+1)];
     
     // pump empty KBoardCells into this KBoard before returning.
     
-    for (int i=1; i <= numItems; i++)
+    for (int i=0; i <= numItems; i++)
     {
         [self insertObject:[KBoardCell initWithPiece:nil andAdjacencyList:nil]
                    atIndex:i];

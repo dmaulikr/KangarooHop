@@ -25,11 +25,11 @@
 @interface KangarooHopGame : NSObject
 
 @property (strong, nonatomic)KBoard *board;
-@property (strong, nonatomic)NSArray *adjacencyListSets; //array of NSSets
+@property (strong, nonatomic)NSArray *allAdjacencyLists; //array of NSSets
 
 -(void)setupGameFromBoard:(KBoard*)board;
 -(void)run;
 -(void)pause;
 -(void)quit;
--(void)setAdjacencyListSets;
+-(void)setAdjacencyLists;
 @end
