@@ -5,9 +5,21 @@
 //  Created by Sean Reed on 9/10/14.
 //  Copyright (c) 2014 seanreed.test. All rights reserved.
 //
+// Board is an array of KBoardCells
+// create a KBoardCell class factory to initialize the board.
+// only need to do this once
+
+// Cells all have an adjacency list, and a piece
+// Pieces know how to move from cell to cell, given the adjacency list for each.
+
 
 #import <Foundation/Foundation.h>
+#import "KBoardCell.h"
 
-@interface KBoard : NSMutableArray
+@interface KBoard : NSMutableArray //ofKBoardCells
+
+
+
++(instancetype)initWithCapacity:(NSUInteger)numItems;
 
 @end

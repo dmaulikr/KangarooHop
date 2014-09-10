@@ -13,12 +13,18 @@
 {
     self = [super init];
     
-    
+    if (self)
+    {
+        self.name = name;
+        self.image = [UIImage imageNamed:imageName];
+    }
     return self;
 }
-+(instancetype)new
+
+
++(instancetype)newKangarooHopPiece
 {
-    return [[KPiece alloc]initWithName:@"KangarooHop" andImageName:@"KangarooImage"];
+    return [[KPiece alloc]initWithName:@"KangarooHopPiece" andImageName:@"kangaroo-icon.png"];
 }
 
 @end

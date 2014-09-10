@@ -11,9 +11,28 @@
 
 
 @implementation KBoardCell
+
++(instancetype)initWithPiece:(KPiece*)piece andAdjacencyList:(NSSet*)adjacencyList
+{
+    return [[KBoardCell alloc]initWithPiece:piece andAdjacencyList:adjacencyList];
+}
+
+-(instancetype)initWithPiece:(KPiece*)piece andAdjacencyList:(NSSet*)adjacencyList
+{
+    self = [super init];
+    self.piece = piece;
+    self.adjacencyList = adjacencyList;
+    return self;
+}
+
 - (BOOL)isOccupied
 {
-    return (_piece != nil);
+    return (self.piece != nil);
 }
+
+//designated initializer
+
+
+
 
 @end

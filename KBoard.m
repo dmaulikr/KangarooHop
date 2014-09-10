@@ -9,5 +9,17 @@
 #import "KBoard.h"
 
 @implementation KBoard
-
+-(instancetype)initWithCapacity:(NSUInteger)numItems
+{   //creates KBoard for 1 offset use, i.e. Kboard[0] will never be assigned
+    
+    self = [super initWithCapacity:(numItems+1)];
+    
+    
+    return self;
+    
+}
++(instancetype)initWithCapacity:(NSUInteger)numItems
+{
+    return [[KBoard alloc]initWithCapacity:numItems];
+}
 @end

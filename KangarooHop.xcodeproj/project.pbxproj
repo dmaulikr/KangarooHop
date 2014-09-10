@@ -24,6 +24,7 @@
 		14A38E6A19C091E900448B01 /* KPiece.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A38E6919C091E900448B01 /* KPiece.m */; };
 		14A38E6D19C0921900448B01 /* KBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A38E6C19C0921900448B01 /* KBoard.m */; };
 		14A38E7019C0925200448B01 /* KBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A38E6F19C0925200448B01 /* KBoardCell.m */; };
+		14A38E7219C09C6100448B01 /* kangaroo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A38E7119C09C6100448B01 /* kangaroo-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		14A38E6C19C0921900448B01 /* KBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBoard.m; sourceTree = "<group>"; };
 		14A38E6E19C0925200448B01 /* KBoardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBoardCell.h; sourceTree = "<group>"; };
 		14A38E6F19C0925200448B01 /* KBoardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBoardCell.m; sourceTree = "<group>"; };
+		14A38E7119C09C6100448B01 /* kangaroo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kangaroo-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		14A38E3A19C0919300448B01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				14A38E7119C09C6100448B01 /* kangaroo-icon.png */,
 				14A38E3B19C0919300448B01 /* KangarooHop-Info.plist */,
 				14A38E3C19C0919300448B01 /* InfoPlist.strings */,
 				14A38E3F19C0919300448B01 /* main.m */,
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A38E7219C09C6100448B01 /* kangaroo-icon.png in Resources */,
 				14A38E4C19C0919300448B01 /* Images.xcassets in Resources */,
 				14A38E3E19C0919300448B01 /* InfoPlist.strings in Resources */,
 				14A38E4719C0919300448B01 /* Main.storyboard in Resources */,
@@ -475,6 +479,7 @@
 				14A38E6419C0919300448B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14A38E6519C0919300448B01 /* Build configuration list for PBXNativeTarget "KangarooHopTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +488,7 @@
 				14A38E6719C0919300448B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
