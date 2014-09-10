@@ -20,5 +20,7 @@
 
 
 +(instancetype)initWithCapacity:(NSUInteger)numItems;
++(instancetype)initWithArrayOfKBoardCells:(NSArray*)array; //array of KBoardCells
++(instancetype)initWithData:(NSData *)data;
 
 @end

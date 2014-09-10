@@ -13,7 +13,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //instantiate a new game here.
+    
+    KangarooHopGame *game = [[KangarooHopGame alloc]init];
+    [game run];
+    
     return YES;
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

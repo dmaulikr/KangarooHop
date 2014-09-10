@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KangarooHopGame.h"
+
 
 @interface KHopAppDelegate : UIResponder <UIApplicationDelegate>
 

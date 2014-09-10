@@ -14,12 +14,22 @@
 
 //  KangarooHopGame know how to move KPieces from KBoardCell to KBoardCell, given the adjacencyList for each KBoardCell, and whether the intervening KBoardCell isOccupied.
 
+//Game needs to read file to setup initial configuration
+
 
 #import <Foundation/Foundation.h>
 #import "KBoard.h"
 #import "KBoardCell.h"
 #import "KPiece.h"
-@interface KangarooHopGame : NSObject
-@property (strong, nonatomic)KBoard *board;
 
+@interface KangarooHopGame : NSObject
+
+@property (strong, nonatomic)KBoard *board;
+@property (strong, nonatomic)NSArray *adjacencyListSets; //array of NSSets
+
+-(void)setupGameFromBoard:(KBoard*)board;
+-(void)run;
+-(void)pause;
+-(void)quit;
+-(void)setAdjacencyListSets;
 @end

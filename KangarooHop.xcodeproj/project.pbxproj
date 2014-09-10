@@ -26,6 +26,7 @@
 		14A38E7019C0925200448B01 /* KBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A38E6F19C0925200448B01 /* KBoardCell.m */; };
 		14A38E7219C09C6100448B01 /* kangaroo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A38E7119C09C6100448B01 /* kangaroo-icon.png */; };
 		14A38E7519C0B8DA00448B01 /* KangarooHopGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A38E7419C0B8DA00448B01 /* KangarooHopGame.m */; };
+		14A38E7719C0CCA100448B01 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 14A38E7619C0CCA100448B01 /* level1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		14A38E7119C09C6100448B01 /* kangaroo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kangaroo-icon.png"; sourceTree = "<group>"; };
 		14A38E7319C0B8DA00448B01 /* KangarooHopGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KangarooHopGame.h; sourceTree = "<group>"; };
 		14A38E7419C0B8DA00448B01 /* KangarooHopGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KangarooHopGame.m; sourceTree = "<group>"; };
+		14A38E7619C0CCA100448B01 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +98,9 @@
 		14A38E2719C0919300448B01 = {
 			isa = PBXGroup;
 			children = (
-				14A38E6819C091E900448B01 /* KPiece.h */,
 				14A38E7319C0B8DA00448B01 /* KangarooHopGame.h */,
 				14A38E7419C0B8DA00448B01 /* KangarooHopGame.m */,
+				14A38E6819C091E900448B01 /* KPiece.h */,
 				14A38E6919C091E900448B01 /* KPiece.m */,
 				14A38E6B19C0921900448B01 /* KBoard.h */,
 				14A38E6C19C0921900448B01 /* KBoard.m */,
@@ -134,6 +136,7 @@
 		14A38E3919C0919300448B01 /* KangarooHop */ = {
 			isa = PBXGroup;
 			children = (
+				14A38E7619C0CCA100448B01 /* level1.txt */,
 				14A38E4219C0919300448B01 /* KHopAppDelegate.h */,
 				14A38E4319C0919300448B01 /* KHopAppDelegate.m */,
 				14A38E4519C0919300448B01 /* Main.storyboard */,
@@ -252,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A38E7719C0CCA100448B01 /* level1.txt in Resources */,
 				14A38E7219C09C6100448B01 /* kangaroo-icon.png in Resources */,
 				14A38E4C19C0919300448B01 /* Images.xcassets in Resources */,
 				14A38E3E19C0919300448B01 /* InfoPlist.strings in Resources */,

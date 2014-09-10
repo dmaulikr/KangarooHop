@@ -25,9 +25,9 @@
 
 }
 
-
+//designated initializer
 -(instancetype)initWithCapacity:(NSUInteger)numItems
-{   //creates KBoard for 1 offset use, i.e. Kboard[0] will never be assigned
+{   //creates KBoard for 1 offset use, i.e. Kboard[0] will never be assigned for any instance.
     
     self = [super initWithCapacity:(numItems+1)];
     
@@ -43,7 +43,5 @@
     
 }
 @end
-// MAKE AN Class METHOD FOR INIT WITH ARRAY of given KBoardCells
-
 
 
