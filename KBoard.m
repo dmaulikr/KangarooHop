@@ -7,19 +7,43 @@
 //
 
 #import "KBoard.h"
+#import "KBoardCell.h"
 
 @implementation KBoard
+
++(instancetype)initWithCapacity:(NSUInteger)numItems
+{
+    return [[KBoard alloc]initWithCapacity:numItems];
+}
+
++(instancetype)initWithArrayOfKBoardCells:(NSArray*)array
+{
+    //array MUST be 1 offset!!!!!!!!
+    KBoard *kboard = (KBoard *)[[KBoard superclass]arrayWithCapacity:[array count]];
+    [kboard setArray:array];
+    return kboard;
+
+}
+
+
 -(instancetype)initWithCapacity:(NSUInteger)numItems
 {   //creates KBoard for 1 offset use, i.e. Kboard[0] will never be assigned
     
     self = [super initWithCapacity:(numItems+1)];
     
+    // pump empty KBoardCells into this KBoard before returning.
+    
+    for (int i=1; i <= numItems; i++)
+    {
+        [self insertObject:[KBoardCell initWithPiece:nil andAdjacencyList:nil]
+                   atIndex:i];
+    }
     
     return self;
     
 }
-+(instancetype)initWithCapacity:(NSUInteger)numItems
-{
-    return [[KBoard alloc]initWithCapacity:numItems];
-}
 @end
+// MAKE AN Class METHOD FOR INIT WITH ARRAY of given KBoardCells
+
+
+

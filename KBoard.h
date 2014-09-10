@@ -14,10 +14,9 @@
 
 
 #import <Foundation/Foundation.h>
-#import "KBoardCell.h"
+
 
 @interface KBoard : NSMutableArray //ofKBoardCells
-
 
 
 +(instancetype)initWithCapacity:(NSUInteger)numItems;

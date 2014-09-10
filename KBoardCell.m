@@ -12,11 +12,12 @@
 
 @implementation KBoardCell
 
+// class factory
 +(instancetype)initWithPiece:(KPiece*)piece andAdjacencyList:(NSSet*)adjacencyList
 {
     return [[KBoardCell alloc]initWithPiece:piece andAdjacencyList:adjacencyList];
 }
-
+//designated initializer
 -(instancetype)initWithPiece:(KPiece*)piece andAdjacencyList:(NSSet*)adjacencyList
 {
     self = [super init];
@@ -30,7 +31,10 @@
     return (self.piece != nil);
 }
 
-//designated initializer
+- (void)removePiece
+{
+    self.piece = nil;
+}
 
 
 

@@ -9,9 +9,9 @@
 // create a KBoardCell class factory to initialize the board.
 // only need to do this once
 
-// Cells all have an adjacency list, and a piece
+// KBoardCells all have an adjacency list, and they have 0 or 1 KPieces associated with them as a property
 
-// Pieces know how to move from KBoardCell to KBoardcell, given the adjacencylist for each.
+// KPieces know how to move from KBoardCell to KBoardCell, given the adjacencylist for each. They set their pointer in KBoardCell to nil if they move to a different cell or are removed from the board
 
 
 #import <Foundation/Foundation.h>

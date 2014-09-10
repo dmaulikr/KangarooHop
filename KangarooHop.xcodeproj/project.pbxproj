@@ -25,6 +25,7 @@
 		14A38E6D19C0921900448B01 /* KBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A38E6C19C0921900448B01 /* KBoard.m */; };
 		14A38E7019C0925200448B01 /* KBoardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A38E6F19C0925200448B01 /* KBoardCell.m */; };
 		14A38E7219C09C6100448B01 /* kangaroo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A38E7119C09C6100448B01 /* kangaroo-icon.png */; };
+		14A38E7519C0B8DA00448B01 /* KangarooHopGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A38E7419C0B8DA00448B01 /* KangarooHopGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		14A38E6E19C0925200448B01 /* KBoardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBoardCell.h; sourceTree = "<group>"; };
 		14A38E6F19C0925200448B01 /* KBoardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBoardCell.m; sourceTree = "<group>"; };
 		14A38E7119C09C6100448B01 /* kangaroo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kangaroo-icon.png"; sourceTree = "<group>"; };
+		14A38E7319C0B8DA00448B01 /* KangarooHopGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KangarooHopGame.h; sourceTree = "<group>"; };
+		14A38E7419C0B8DA00448B01 /* KangarooHopGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KangarooHopGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				14A38E6819C091E900448B01 /* KPiece.h */,
+				14A38E7319C0B8DA00448B01 /* KangarooHopGame.h */,
+				14A38E7419C0B8DA00448B01 /* KangarooHopGame.m */,
 				14A38E6919C091E900448B01 /* KPiece.m */,
 				14A38E6B19C0921900448B01 /* KBoard.h */,
 				14A38E6C19C0921900448B01 /* KBoard.m */,
@@ -270,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14A38E6D19C0921900448B01 /* KBoard.m in Sources */,
+				14A38E7519C0B8DA00448B01 /* KangarooHopGame.m in Sources */,
 				14A38E6A19C091E900448B01 /* KPiece.m in Sources */,
 				14A38E7019C0925200448B01 /* KBoardCell.m in Sources */,
 				14A38E4A19C0919300448B01 /* KHopViewController.m in Sources */,

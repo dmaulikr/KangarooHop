@@ -9,6 +9,12 @@
 #import "KPiece.h"
 
 @implementation KPiece
+
++(instancetype)newKangarooHopPiece
+{
+    return [[KPiece alloc]initWithName:@"KangarooHopPiece" andImageName:@"kangaroo-icon.png"];
+}
+
 -(instancetype)initWithName:(NSString*)name andImageName:(NSString*)imageName
 {
     self = [super init];
@@ -22,9 +28,6 @@
 }
 
 
-+(instancetype)newKangarooHopPiece
-{
-    return [[KPiece alloc]initWithName:@"KangarooHopPiece" andImageName:@"kangaroo-icon.png"];
-}
+
 
 @end

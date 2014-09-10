@@ -21,5 +21,5 @@
 @property (strong, nonatomic)NSSet *adjacencyList;
 @property (assign, nonatomic, readonly, getter = isOccupied)BOOL occupied;
 +(instancetype)initWithPiece:(KPiece*)piece andAdjacencyList:(NSSet*)adjacencyList;
-
+- (void)removePiece;
 @end
