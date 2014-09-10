@@ -18,6 +18,16 @@
     
     KangarooHopGame *game = [[KangarooHopGame alloc]init];
     [game run];
+
+    
+//    NSArray *myArrayOfSets = [game allAdjacencyLists];
+//    
+//    NSLog(@"\nTotal number of sets in the array is %lu",(unsigned long)[myArrayOfSets count]);
+//    
+//    for (id mySet in myArrayOfSets)
+//    {
+//        NSLog(@"\ncount is %lu and members are %@",(unsigned long)[mySet count],[mySet allObjects]);
+//    }
     
     return YES;
     

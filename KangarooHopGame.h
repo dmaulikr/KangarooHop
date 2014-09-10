@@ -29,6 +29,7 @@
 
 -(void)setupGameFromBoard:(KBoard*)board;
 -(void)run;
+-(void)moveIt;
 -(void)pause;
 -(void)quit;
 -(void)setAdjacencyLists;
